@@ -1,1 +1,130 @@
 
+## 🧾 **Compte rendu : Base de données “Heart Disease”**
+
+### 📘 **Titre du projet**
+
+**Heart Disease Databases** — Étude sur le diagnostic des maladies coronariennes à partir de données cliniques.
+
+---
+
+### 🕰️ **Quand ?**
+
+* Les données ont été **collectées avant 1988**.
+* Le fichier principal a été formalisé et publié en **juillet 1988**.
+* Une étude scientifique majeure associée date de **1989** :
+
+  > *R. Detrano et al., “International application of a new probability algorithm for the diagnosis of coronary artery disease,” American Journal of Cardiology, 1989.*
+
+---
+
+### 👩‍⚕️ **Qui ? (chercheurs et institutions)**
+
+Les données proviennent de **quatre institutions médicales internationales**, chacune ayant son **investigateur principal** :
+
+1. **Hungarian Institute of Cardiology**, Budapest
+   → *Dr. Andras Janosi, M.D.*
+
+2. **University Hospital**, Zurich, Suisse
+   → *Dr. William Steinbrunn, M.D.*
+
+3. **University Hospital**, Basel, Suisse
+   → *Dr. Matthias Pfisterer, M.D.*
+
+4. **V.A. Medical Center**, Long Beach (Californie, USA)
+   et **Cleveland Clinic Foundation**, USA
+   → *Dr. Robert Detrano, M.D., Ph.D.*
+
+---
+
+### 🌍 **Où ? (pays et lieux de collecte)**
+
+Les bases de données ont été collectées dans **quatre pays** :
+
+* 🇺🇸 **États-Unis** – Cleveland (Ohio) et Long Beach (Californie)
+* 🇭🇺 **Hongrie** – Budapest
+* 🇨🇭 **Suisse** – Zurich et Bâle
+
+---
+
+### 👥 **Quelle population ?**
+
+* Patients examinés pour suspicion de **maladie coronarienne** (angine, infarctus, etc.).
+* Les individus proviennent de **quatre cohortes cliniques** (une par centre hospitalier).
+* Nombre exact d’individus par centre (selon les versions traitées du dataset) :
+
+  * Cleveland : 303 patients
+  * Hungarian : 294 patients
+  * Switzerland : 123 patients
+  * Long Beach VA : 200 patients
+    ➜ **Total approximatif : 920 personnes.**
+
+---
+
+### 🧪 **Comment (méthodologie et variables)**
+
+* Données collectées à partir d’**examens médicaux standards** : électrocardiogrammes, tests d’effort, mesures sanguines, âge, sexe, etc.
+* 76 variables brutes ont été relevées initialement, mais seules **14 variables principales** ont été utilisées dans les expériences :
+
+  * âge, sexe
+  * pression artérielle au repos
+  * cholestérol sérique
+  * glycémie à jeun
+  * résultats ECG
+  * fréquence cardiaque maximale atteinte
+  * angine induite par l’effort
+  * dépression du segment ST, etc.
+* Chaque patient est étiqueté par un **diagnostic final** (présence ou absence de maladie cardiaque).
+
+---
+
+### 🧩 **Fichiers contenus**
+
+* `cleveland.data`, `hungarian.data`, `switzerland.data`, `long-beach-va.data` → données brutes
+* `processed.*.data` → versions filtrées et normalisées
+* `heart-disease.names` → documentation descriptive
+* `reprocessed.hungarian.data`, `new.data`, etc. → variantes utilisées dans des études ultérieures
+
+---
+
+### 🎯 **Objectif scientifique**
+
+Développer et valider un **algorithme probabiliste international** pour diagnostiquer la **maladie coronarienne** à partir de données cliniques mesurées chez le patient.
+
+---
+
+### 📈 **Résultats mentionnés (étude de 1989)**
+
+* Précision du modèle (seuil 0.5) :
+
+  * Hongrie : 77 %
+  * Long Beach : 79 %
+  * Suisse : 81 %
+    ➜ Moyenne : **≈ 77 % de précision.**
+
+---
+
+### 💾 **Statut et usage**
+
+* Base de données publique (souvent référencée comme **UCI Heart Disease Dataset**).
+* Largement utilisée pour :
+
+  * l’apprentissage automatique (machine learning),
+  * la recherche biomédicale,
+  * les travaux pratiques universitaires.
+
+---
+
+### 🧭 **Résumé synthétique**
+
+| Élément                   | Détail                                                                         |
+| ------------------------- | ------------------------------------------------------------------------------ |
+| **Nom**                   | Heart Disease Dataset                                                          |
+| **Année de création**     | 1988                                                                           |
+| **Pays concernés**        | États-Unis, Hongrie, Suisse                                                    |
+| **Population totale**     | ≈ 920 patients                                                                 |
+| **But**                   | Étude et prédiction de la maladie coronarienne                                 |
+| **Institutions**          | Cleveland Clinic, Long Beach VA, Hungarian Institute, Zurich & Basel Hospitals |
+| **Chercheurs principaux** | R. Detrano, A. Janosi, W. Steinbrunn, M. Pfisterer                             |
+| **Source publique**       | UCI Machine Learning Repository                                                |
+| **Langue originale**      | Anglais                                                                        |
+| **Type de données**       | Médicales (cliniques, numériques)                                              |
